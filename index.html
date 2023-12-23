@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database</title>
+  </head>
+  <body style="display: flex; flex-direction: row; justify-content: space-between;">
+    <div class="left"><ul class="db_list"><li>table1</li><li>table2</li><li>table3</li></ul></div>
+    <div class="middle">middle</div>
+    <div class="right">
+      <form action="http://localhost:3000/createTable" method="POST">
+        
+        <input name="tableName" type="text" placeholder="tableName"/><br>
+        <input name="fieldName" type="text" placeholder="fieldName"/>
+        <select name="dataType">
+          <option value="STRING">STRING</option>
+          <option value="NUMBER">NUMBER</option>
+        </select><br>
+        <!-- <button type="button">Add Field</button></form><br> -->
+        <button type="submit">CREATE TABLE</button>
+      </form>
+    </div>
+  </body>
+</html>
